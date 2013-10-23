@@ -1,0 +1,73 @@
+/* @group GENERAL STYLES
+------------------------------------------------------------------------*/
+@import "normalize.css";
+
+body {
+	font-family: "HelveticaNeueUltraLight", "HelveticaNeue-Ultra-Light", "Helvetica Neue Ultra Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+	font-size: 100%;
+	width:auto; 
+	height:auto;	
+	color: #7d7d7b;
+}
+	
+/* @group HELPERS
+------------------------------------------------------------------------*/
+
+.clear { clear: both }
+
+
+/* @group PAGE STRUCTURE
+------------------------------------------------------------------------*/
+#container {	
+	width: 100%;
+	margin: 0 auto;			
+}
+
+
+#headBanner {	
+	height: 450px;
+	margin: 60px auto 0 auto;
+	width: 100%;
+	position: relative;
+	padding-top: 1px;
+	overflow: hidden;
+	background-color: #dddddd;	
+	background-position: center 0px;
+
+}
+
+#bannerText {
+	position: fixed;
+	top: 100px;
+	text-align: center;		
+	width: 100%;	
+	color:#fff;
+	font-size: 64px;
+	text-transform: uppercase;
+	display: block;
+	text-shadow: 0 0 8px rgba(0,0,0,.3);
+	position: relative;
+	margin: 0 auto 0px;
+	padding: 0 0px;
+	font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#wrap {
+	margin: 20px auto;
+	padding: 0 0 0px 0;	
+	max-width: 62.5em;			
+}
+
+.building {
+	width: 462.5px;
+	height: 275px;
+	margin: 0 0 25px 25px;
+	float: left;
+	background: gray;
+}
+.building a {
+	display: block;
+	height: 275px;
+}
