@@ -37,6 +37,7 @@ body {
 							/* TOP CONTENT */
 #headBanner {
 	width: 100%;
+	background-position: center 0px;
 	background-image: url(../img/cover.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -117,9 +118,8 @@ body {
 }
 .contacts p {
 	margin: 0px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	text-align: center;
-	font-size: 0.9em;
 }
 							
 							
