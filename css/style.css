@@ -9,13 +9,22 @@ body {
 	font-size: 100%;
 	width:auto; 
 	height:auto;	
-	color: #7d7d7b;
+	color: #000000;
+	overflow: hidden;	
 }
 	
 /* @group HELPERS
 ------------------------------------------------------------------------*/
 
 .clear { clear: both }
+
+@font-face {
+  font-family: Zapfino;
+  font-style: normal;
+  font-weight: 400;
+  src: local(Zapfino), url(Zapfino.ttf);
+}
+
 
 
 /* @group PAGE STRUCTURE
@@ -27,47 +36,97 @@ body {
 
 
 #headBanner {	
-	height: 450px;
-	margin: 60px auto 0 auto;
+	height: 520px;
+	margin: 0px auto 0 auto;
 	width: 100%;
-	position: relative;
-	padding-top: 1px;
-	overflow: hidden;
-	background-color: #dddddd;	
 	background-position: center 0px;
+	background-image: url(../img/cover.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow: hidden;
 
 }
 
 #bannerText {
-	position: fixed;
-	top: 100px;
+	position: relative;
+	top: 150px;
 	text-align: center;		
 	width: 100%;	
 	color:#fff;
-	font-size: 64px;
-	text-transform: uppercase;
 	display: block;
-	text-shadow: 0 0 8px rgba(0,0,0,.3);
-	position: relative;
+	text-shadow: 0 0 8px rgba(0,0,0,1);
 	margin: 0 auto 0px;
 	padding: 0 0px;
-	font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Zapfino;
+	font-size: 3em;
+	font-weight: 100;
 }
 
-#wrap {
-	margin: 20px auto;
+.wrap {
+	margin: 0px auto;
 	padding: 0 0 0px 0;	
-	max-width: 62.5em;			
+	max-width: 62.5em;	
+	background: transparent;	
 }
 
 .building {
-	width: 462.5px;
-	height: 275px;
-	margin: 0 0 25px 25px;
+	width: 400px;
+	height: 255px;
 	float: left;
-	background: gray;
+	overflow: hidden;
+	background: transparent;
 }
 .building a {
 	display: block;
 	height: 275px;
 }
+
+#description div {
+	float:left;
+	width: 480px;
+	text-align: justify;
+	
+}
+
+#description h2 {
+	font-family: Zapfino;
+	text-align: center;
+}
+
+#contacts div {
+	float: left;
+	width: 480px;
+	text-align: center;
+}
+
+
+
+#footer {
+	height: 320px;
+	width: 100%;
+	background-color: #4e4e4e;
+}
+
+    
+/* preloader */
+#preloader {
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		background-color: #000; 
+		z-index:99; /* makes sure it stays on top */
+	}
+
+#status {
+		width:200px;
+		height:200px;
+		position:absolute;
+		left:50%;
+		top:30%;
+		background-image:url(../img/preloader.gif);
+		background-repeat:no-repeat;
+		background-position:center;
+		margin:-100px 0 0 -100px; /* is width and height divided by two */
+	}
