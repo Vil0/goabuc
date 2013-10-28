@@ -26,58 +26,46 @@
 </div>
 	
 <div id="container">
+	
 	<header>
-		<div id="headText">
-		
-		</div>
 		<div id="headBanner">
-			<h1 id="bannerText">Gymnázium a Obchodní akademie<br/> Bučovice</h1>
-
+			<h1 style="margin-top: 100px;">Gymnázium a Obchodní akademie<br/> Bučovice</h1> <!-- top margin didn't just work in style.css -->
+			<div id="buildWrap"> <!-- centering buildings pics -->
+				<div class="building" style="margin-left: 40px; margin-right: 120px;"> <!-- margin for only the first of this class -->
+					<a href="http://www.gymbuc.cz/index.php">
+						<img src="img/gympl.png">
+					</a>
+				</div>
+		
+				<div class="building">
+					<a href="http://www.oabucovice.cz/index.php">
+						<img src="img/gympl.png">
+					</a>
+				</div>	<div class="clear"></div>
+			</div>
 		</div>
 	</header>
 	
 	
 	<div class="wrap">
-		
-		<div class="building" style="margin-left: 40px; margin-right: 120px;">
-			<a href="http://www.gymbuc.cz/index.php">
-				<img src="img/gympl.png">
-			</a>
-		</div>
-		
-		
-		<div class="building">
-			<a href="http://www.oabucovice.cz/index.php">
-				<img src="img/gympl.png">
-			</a>
-		</div>
-			
-			<div class="clear"></div>
-		
-		<div id="description">
-			<div style="margin-right:40px;">
+	
+		<div id="descriptWrap">
+			<div class="descript" style="margin-right:40px;">
 				<h2>Gymnázium</h2> 
 				<p>Gymnázium je střední všeobecně vzdělávací vnitřně diferencovaná škola. Poskytuje úplné středoškolské vzdělání zakončené maturitní zkouškou. V současnosti má osm tříd osmiletého studijního programu (4 třídy nižší stupeň gymnázia) a čtyři třídy čtyřletého studijního programu.
 				</p>
 			</div>
 		
-			<div>
+			<div class="descript">
 				<h2>Obchodní akademie</h2>
 				<p>Obchodní akademie nabízí čtyřletý studijní obor zakončený maturitní zkouškou. Připravuje absolventy ekonomického zaměření na výkon obchodně podnikatelských činností ve výrobních a obchodních podnicích, v peněžnictví, v cestovním ruchu a ve státní a veřejné správě.
 				</p>
-			</div>
+			</div>	<div class="clear"></div>
 		</div>
 		
-			<div class="clear"></div>
-
-	</div> <!-- wrap ends -->
-	
-	
-	<div id="footer">	
-		<div class="wrap">
-			<div id="contacts">
+		<div id="contactsWrap">
 				<h3>Kontakt</h3>
-				<div style="margin-right:40px;">
+				<div class="contacts" style="margin-right:40px;">
 					<p>
 					Gymnázium
 					Adresa:	Součkova 500, 685 01 Bučovice<br/>
@@ -88,7 +76,7 @@
 					IZO:	102 807 647<br/>
 					</p>	
 				</div>
-				<div>
+				<div class="contacts">
 					<p>
 					Odloučené pracoviště<br/>
 					Obchodní akademie<br/>
@@ -99,11 +87,15 @@
 					Školní jídelna:	+420 517 383 610<br/>
 					Email:	info@oabucovice.cz<br/>
 					</p>
-				</div>
+				</div>	<div class="clear"></div>
 			</div>
-		</div> 
-		
-		<div class="clear"></div>
+	</div> <!-- wrap ends -->
+	
+	
+	<div id="footer">	
+		<div class="wrap">
+			
+		</div>	<div class="clear"></div>
 
 <!-- DELETE BEFORE HAND OUT, OR MAKE IT WORK - This is the jspaper canvas with script.js, which didn't work quite well
 		<!--

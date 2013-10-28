@@ -30,14 +30,11 @@ body {
 /* @group PAGE STRUCTURE
 ------------------------------------------------------------------------*/
 #container {	
-	width: 100%;
-	margin: 0 auto;			
+	width: 100%;		
 }
 
 
-#headBanner {	
-	height: 520px;
-	margin: 0px auto 0 auto;
+#headBanner {
 	width: 100%;
 	background-position: center 0px;
 	background-image: url(../img/cover.jpg);
@@ -47,24 +44,25 @@ body {
 
 }
 
-#bannerText {
-	position: relative;
-	top: 150px;
-	text-align: center;		
-	width: 100%;	
+#headBanner h1 {
+	text-align: center;
+	width: 100%;
 	color:#fff;
 	display: block;
 	text-shadow: 0 0 8px rgba(0,0,0,1);
-	margin: 0 auto 0px;
-	padding: 0 0px;
+	margin: 0 auto;
 	font-family: Zapfino;
-	font-size: 3em;
+	font-size: 3.3em;
 	font-weight: 100;
+}
+
+#buildWrap {
+	margin: 90px auto 20px auto;
+	max-width: 62.5em;	
 }
 
 .wrap {
 	margin: 0px auto;
-	padding: 0 0 0px 0;	
 	max-width: 62.5em;	
 	background: transparent;	
 }
@@ -81,23 +79,29 @@ body {
 	height: 275px;
 }
 
-#description div {
+.descript {
 	float:left;
 	width: 480px;
 	text-align: justify;
 	
 }
 
-#description h2 {
+.descript h2 {
 	font-family: Zapfino;
 	text-align: center;
 }
 
+.contacts {
+	float: left;
+	width: 480px;
+}
+/*
 #contacts div {
 	float: left;
 	width: 480px;
 	text-align: center;
 }
+*/
 
 
 
