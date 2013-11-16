@@ -31,29 +31,51 @@ body {
 /* @group PAGE STRUCTURE
 ------------------------------------------------------------------------*/
 #container {	
-	width: 100%;		
-}
-
-							/* TOP CONTENT */
-#headBanner {
-	background-image: url(../img/cover.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: 50% 0%;
-	overflow: hidden;
+	width: 100%;
+	background-image: url(../img/background.jpg);
 
 }
+
+#topline {
+	width: 100%;
+}
+#topline div {
+	height: 6px;
+	width: 14.28571429%;
+	float: left;
+}
+#topline #one {
+	background-color: #381e6c;
+}
+#topline #two {
+	background-color: #4d7dec;
+}
+#topline #three {
+	background-color: #dd5ac9;
+}
+#topline #four {
+	background-color: #ff5234;
+}
+#topline #five {
+	background-color: #fb8306;
+}
+#topline #six {
+	background-color: #fbd506;
+}
+#topline #seven {
+	background-color: #9ed506;
+}
+
+						/* TOP CONTENT */
 
 #headBanner h1 {
 	text-align: center;
 	color:#fff;
 	text-shadow: 0 0 8px rgba(0,0,0,1);
 	margin: 0 auto;
-	padding: 0 0px;
-	font-family: Zapfino;
 	font-size: 3.3em;
 	font-weight: 100;
-	line-height: 3.3em;;
+	line-height: 2.3em;;
 	
 }
 
@@ -72,7 +94,9 @@ body {
 	float: left;
 	width: 580px;
 	height: 600px;
-	box-shadow: 1px 1px 2px 3px #5e5e5e;
+	box-shadow: 1px 1px 2px 1px #5e5e5e;
+	border-radius: 6px;
+	background-image: url(../img/background_dark.png);
 }
 .institution:first-of-type {
 	margin-right: 70px;
@@ -82,26 +106,23 @@ body {
 	display: block;
 	width: 580px;
 	height: 600px;
+	text-decoration: none;
 }
 .building {
 	width: 460px;
 	height: 285px;
 	overflow: hidden;
 }
-
-.building a {
-	display: block;
-	height: 285px;
-}
 	
-
+	
 .descript {
-	width: 480px;
 	text-align: justify;
+	color: #bbbbbb;
+	padding: 0px 50px;
+	
 }
 
 .descript h2 {
-	font-family: Zapfino;
 	text-align: center;
 	margin-bottom: 50px;
 	margin-top: 60px;
@@ -115,20 +136,21 @@ body {
 	
 	/* contacts */
 #contactsWrap {
-	margin-top: 50px;
+	margin-top: 80px;
+	padding-bottom: 80px;
 }
-#contactsWrap h3 {
-	text-align: center;
-	margin-bottom: 20px;
-	text-transform: uppercase;
-	font-weight: bold;
-}
+
 .contacts {
 	float: left;
-	width: 480px;
+	width: 320px;
+	height: 320px;
+	border-radius: 50%;
+	background-color: #ff5234;
 }
 .contacts:first-of-type {
 	margin-left: 170px;
+	margin-right: 340px;
+	background-color: #4d7dec;
 }
 .contacts ul {
 	margin: 0px;
@@ -136,6 +158,7 @@ body {
 	font-size: 0.9em;
 	text-align: center;
 	line-height: 1.2em;
+	padding-top: 90px;
 }
 .contacts h4 {
 	margin-bottom: 10px;
