@@ -36,6 +36,7 @@ body {
 
 }
 
+/* colorline at the top */
 #topline {
 	width: 100%;
 }
@@ -57,10 +58,10 @@ body {
 	background-color: #ff5234;
 }
 #topline #five {
-	background-color: #fb8306;
+	background-color: #fc9d38;
 }
 #topline #six {
-	background-color: #fbd506;
+	background-color: #ffe860;
 }
 #topline #seven {
 	background-color: #9ed506;
@@ -70,15 +71,26 @@ body {
 
 #headBanner h1 {
 	text-align: center;
-	color:#fff;
-	text-shadow: 0 0 8px rgba(0,0,0,1);
+	color:#1a1a1a;
 	margin: 0 auto;
-	font-size: 3.3em;
-	font-weight: 100;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 5.3em; 
 	line-height: 2.3em;;
-	
 }
 
+#headBanner h2 {
+	text-align: center;
+	font-size: 3em;
+	font-family: 'Indie Flower', cursive;
+}
+#headBanner h2 a {
+	text-decoration: none;
+	color: #4d7dec;
+}
+#headBanner h2 a:hover {
+	color: #ff5234;
+
+}
 
 						
 							
@@ -109,7 +121,7 @@ body {
 	text-decoration: none;
 }
 .building {
-	width: 460px;
+	width: 580px;
 	height: 285px;
 	overflow: hidden;
 }
