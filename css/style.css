@@ -1,10 +1,10 @@
 /* @group GENERAL STYLES
 ------------------------------------------------------------------------*/
 @import "normalize.css";
-/* @import "reset.css"; */
+@import "reset.css";
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: Candara, sans-serif;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 	font-size: 100%;
@@ -40,6 +40,7 @@ body {
 	background-image: url(../img/cover.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-position: 50% 0%;
 	overflow: hidden;
 
 }
@@ -54,6 +55,7 @@ body {
 	font-family: Zapfino;
 	font-size: 3.3em;
 	font-weight: 100;
+	line-height: 3.3em;
 }
 
 #buildWrap {
@@ -77,7 +79,7 @@ body {
 							/* MIDDLE CONTENT */
 .wrap {
 	margin: 0px auto;
-	max-width: 62.5em;	
+	max-width: 1000px;	
 }
 
 .descript {
@@ -89,12 +91,13 @@ body {
 .descript h2 {
 	font-family: Zapfino;
 	text-align: center;
-	margin-bottom: 30px;
-	margin-top: 20px;
+	margin-bottom: 50px;
+	margin-top: 60px;
+	font-size: 1.5em;
 }
 
 .descript p {
-	margin: 0px;
+	line-height: 1.3em;
 }
 
 .descript a {
@@ -110,26 +113,37 @@ body {
 #contactsWrap h3 {
 	text-align: center;
 	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 .contacts {
 	float: left;
 	width: 480px;
 }
-.contacts p {
+.contacts ul {
 	margin: 0px;
 	margin-bottom: 40px;
 	font-size: 0.9em;
 	text-align: center;
+	line-height: 1.2em;
 }
-							
-							
+.contacts h4 {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.contacts a {
+	color: #000000;
+	text-decoration: none;
+}			
+.contacts a:hover {
+	color: #727272;
+}			
 							/* FOOTER */
 #footer {
-	height: 330px;
+	height: 290px;
 	width: 100%;
 	background: #1b1b1b;
 	color: #5b5b5a;
-	font-family: Candara;
 }
 #footer h4 {
 	text-align: center;
@@ -152,6 +166,9 @@ body {
 }
 #footer li {
 	line-height: 2.4em;
+}
+#footer ul {
+	margin-top: 20px;
 }
 #footer ul a {
 	color: #767676;
@@ -197,3 +214,15 @@ body {
 		background-position:center;
 		margin:-100px 0 0 -100px;
 }
+
+
+															/****************** RESPONSIVE *******************/
+															
+@media only screen and (max-width: 600px) {
+	#headBanner {
+	
+	}
+	
+	.wrap {
+		
+	}
