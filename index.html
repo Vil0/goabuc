@@ -19,53 +19,59 @@
 	<script src="js/paper-full.min.js"></script>     <!-- paper.js -->
 </head>
 
+
+
 <body>
 
-<div id="preloader">
-	<div id="status">&nbsp;</div>
-</div>
+	<div id="preloader">
+		<div id="status">&nbsp;</div>
+	</div>
 	
 <div id="container">
-	
 	<header>
 		<div id="headBanner">
 			<h1 style="margin-top: 100px;">Gymnázium a Obchodní akademie<br/> Bučovice</h1> <!-- top margin didn't just work in style.css -->
-			<div id="buildWrap"> <!-- centering buildings pics -->
-				<div class="building" style="margin-left: 40px; margin-right: 120px;"> <!-- margin for only the first of this class -->
-					<a href="http://www.gymbuc.cz/index.php">
-						<img src="img/gympl.png">
-					</a>
-				</div>
-		
-				<div class="building">
-					<a href="http://www.oabucovice.cz/index.php">
-						<img src="img/gympl.png">
-					</a>
-				</div>	<div class="clear"></div>
-			</div>
 		</div>
 	</header>
 	
-	
+
 	<div class="wrap">
-	
-		<div id="descriptWrap">
-			<div class="descript" style="margin-right:40px;">
-				<h2><a href="http://www.gymbuc.cz/index.php">Gymnázium</a></h2>
-				<p>Gymnázium je střední všeobecně vzdělávací vnitřně diferencovaná škola. Poskytuje úplné středoškolské vzdělání zakončené maturitní zkouškou. V současnosti má osm tříd osmiletého studijního programu (4 třídy nižší stupeň gymnázia) a čtyři třídy čtyřletého studijního programu.
-				</p>
-			</div>
 		
-			<div class="descript">
-				<h2><a href="http://www.oabucovice.cz/index.php">Obchodní akademie</a></h2>
-				<p>Obchodní akademie nabízí čtyřletý studijní obor zakončený maturitní zkouškou. Připravuje absolventy ekonomického zaměření na výkon obchodně podnikatelských činností ve výrobních a obchodních podnicích, v peněžnictví, v cestovním ruchu a ve státní a veřejné správě.
-				</p>
-			</div>	<div class="clear"></div>
+		<div class="institution"> <!-- gymnazium -->
+		<a href="http://www.gymbuc.cz/index.php">
+				<div class="building">
+					<img src="img/gympl.png">
+				</div>
+		
+				<div class="descript" >
+					<h2>Gymnázium</h2>
+					<p>Gymnázium je střední všeobecně vzdělávací vnitřně diferencovaná škola. Poskytuje úplné středoškolské vzdělání zakončené maturitní zkouškou. V současnosti má osm tříd osmiletého studijního programu (4 třídy nižší stupeň gymnázia) a čtyři třídy čtyřletého studijního programu.
+					</p>
+				</div>
+		</a>
 		</div>
+	
 		
+		
+		<div class="institution"> <!-- obchodni akademie -->
+		<a href="http://www.oabucovice.cz/index.php">
+				<div class="building">
+					<img src="img/gympl.png">
+				</div>
+				
+				<div class="descript">
+					<h2>Obchodní akademie</h2>
+					<p>Obchodní akademie nabízí čtyřletý studijní obor zakončený maturitní zkouškou. Připravuje absolventy ekonomického zaměření na výkon obchodně podnikatelských činností ve výrobních a obchodních podnicích, v peněžnictví, v cestovním ruchu a ve státní a veřejné správě.
+					</p>
+				</div>
+		</a>
+		</div>	<div class="clear"></div>
+		
+		
+
 		<div id="contactsWrap">
 				<h3>Kontakt</h3>
-				<div class="contacts" style="margin-right:40px;">
+				<div class="contacts">
 					<ul>
 						<h4>Gymnázium</h4>
 						<li>Adresa: Součkova 500, 685 01 Bučovice</li>
@@ -89,9 +95,10 @@
 				</div>	<div class="clear"></div>
 			</div>
 	</div> <!-- wrap ends -->
-	
-	
-	<div id="footer">	
+</div> <!-- container ends -->
+
+<div id="footer">	
+
 		<div class="wrap">
 			<div id="content">
 				<h4><a href="index.html">Gymnázium a Obchodní akademie Bučovice</a></h4>
@@ -108,17 +115,8 @@
 			
 		</div>	<div class="clear"></div>
 
-<!-- DELETE BEFORE HAND OUT, OR MAKE IT WORK - This is the jspaper canvas with script.js, which didn't work quite well
-		<!--
-<script src="js/script.js" type="text/paperscript" canvas="canvas-1"></script>
-		<div class="canvas">
-			<canvas resize="true" id="canvas-1"></canvas>
-		</div>  -->
-
 
 	</div> <!-- footer ends -->
-
-</div> <!-- container ends -->
 
 
 <script type="text/javascript">

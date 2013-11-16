@@ -36,7 +36,6 @@ body {
 
 							/* TOP CONTENT */
 #headBanner {
-	width: 100%;
 	background-image: url(../img/cover.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -47,43 +46,56 @@ body {
 
 #headBanner h1 {
 	text-align: center;
-	width: 100%;
 	color:#fff;
-	display: block;
 	text-shadow: 0 0 8px rgba(0,0,0,1);
 	margin: 0 auto;
+	padding: 0 0px;
 	font-family: Zapfino;
 	font-size: 3.3em;
 	font-weight: 100;
-	line-height: 3.3em;
+	line-height: 3.3em;;
+	
 }
 
-#buildWrap {
-	margin: 90px auto 20px auto;
-	max-width: 62.5em;	
-}
 
-.building {
-	width: 400px;
-	height: 255px;
-	float: left;
-	overflow: hidden;
-	background: transparent;
-}
-.building a {
-	display: block;
-	height: 275px;
-}
+						
 							
-							
-							/* MIDDLE CONTENT */
+							/* MIDDLE CONTENT BOXES */
 .wrap {
 	margin: 0px auto;
-	max-width: 1000px;	
+	max-width: 1300px;	
 }
 
+
+.institution {
+	margin-top: 50px;
+	float: left;
+	width: 580px;
+	height: 600px;
+	box-shadow: 1px 1px 2px 3px #5e5e5e;
+}
+.institution:first-of-type {
+	margin-right: 70px;
+	margin-left: 35px;
+}
+.institution a {
+	display: block;
+	width: 580px;
+	height: 600px;
+}
+.building {
+	width: 460px;
+	height: 285px;
+	overflow: hidden;
+}
+
+.building a {
+	display: block;
+	height: 285px;
+}
+	
+
 .descript {
-	float:left;
 	width: 480px;
 	text-align: justify;
 }
@@ -100,16 +112,11 @@ body {
 	line-height: 1.3em;
 }
 
-.descript a {
-	color: #000000;
+	
+	/* contacts */
+#contactsWrap {
+	margin-top: 50px;
 }
-.descript a:hover {
-	color: #999999;
-}
-#descriptWrap {
-	margin-bottom: 100px;
-}
-
 #contactsWrap h3 {
 	text-align: center;
 	margin-bottom: 20px;
@@ -119,6 +126,9 @@ body {
 .contacts {
 	float: left;
 	width: 480px;
+}
+.contacts:first-of-type {
+	margin-left: 170px;
 }
 .contacts ul {
 	margin: 0px;
@@ -157,30 +167,33 @@ body {
 	color: #5b5b5a;
 }
 
-#footer li {
-	list-style: none;
-}
 #footer #content {
 	padding: 15px 0px;
 	border-bottom: 1px solid #5b5b5a;
 }
-#footer li {
-	line-height: 2.4em;
-}
+
 #footer ul {
 	margin-top: 20px;
 }
+
 #footer ul a {
 	color: #767676;
 	text-decoration: none;
 }
+
 #footer ul a:hover {
 	color: #e3e3e3;
+}
+
+#footer li {
+	list-style: none;
+	line-height: 2.4em;
 }
 
 #footer #secondary p {
 	font-family: Candara,sans-serif;
 	font-size: 0.88em;
+	margin-top: 5px;
 }
 #footer #secondary a {
 	color: #5b5b5a;
